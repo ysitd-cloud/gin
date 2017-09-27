@@ -1,0 +1,29 @@
+package: github.com/gin-gonic/gin
+import:
+- package: github.com/dustin/go-broadcast
+- package: github.com/gin-contrib/sse
+- package: github.com/gin-gonic/autotls
+  version: ^0.0.1
+- package: github.com/golang/protobuf
+  subpackages:
+  - proto
+- package: github.com/manucorporat/stats
+- package: github.com/mattn/go-isatty
+  version: ^0.0.3
+- package: github.com/ugorji/go
+  subpackages:
+  - codec
+- package: golang.org/x/crypto
+  subpackages:
+  - acme/autocert
+- package: gopkg.in/go-playground/validator.v8
+  version: ^9.7.0
+- package: gopkg.in/yaml.v2
+testImport:
+- package: github.com/stretchr/testify
+  version: ^1.1.4
+  subpackages:
+  - assert
+- package: golang.org/x/net
+  subpackages:
+  - context
