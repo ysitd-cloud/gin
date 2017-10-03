@@ -1,29 +1,49 @@
 package: github.com/gin-gonic/gin
 import:
 - package: github.com/dustin/go-broadcast
+  version: 3bdf6d4a7164a50bc19d5f230e2981d87d2584f1
 - package: github.com/gin-contrib/sse
+  version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
 - package: github.com/gin-gonic/autotls
-  version: ^0.0.1
+  version: 5b3297bdcee778ff3bbdc99ab7c41e1c2677d22d
 - package: github.com/golang/protobuf
   subpackages:
   - proto
+  version: 5a0f697c9ed9d68fef0116532c6e05cfeae00e55
 - package: github.com/manucorporat/stats
+  version: 8f2d6ace262eba462e9beb552382c98be51d807b
 - package: github.com/mattn/go-isatty
-  version: ^0.0.3
+  version: 57fdcb988a5c543893cc61bce354a6e24ab7002
+- package: github.com/pmezard/go-difflib
+  subpackages:
+  - difflib
+  version: 792786c7400a136282c1664665ae0a8db921c6c2
 - package: github.com/ugorji/go
   subpackages:
   - codec
+  version: c88ee250d0221a57af388746f5cf03768c21d6e2
 - package: golang.org/x/crypto
   subpackages:
   - acme/autocert
-- package: gopkg.in/go-playground/validator.v8
-  version: ^9.7.0
-- package: gopkg.in/yaml.v2
-testImport:
-- package: github.com/stretchr/testify
-  version: ^1.1.4
-  subpackages:
-  - assert
+  version: adbae1b6b6fb4b02448a0fc0dbbc9ba2b95b294d
 - package: golang.org/x/net
   subpackages:
   - context
+  version: d4c55e66d8c3a2f3382d264b08e3e3454a66355a
+- package: golang.org/x/sys
+  subpackages:
+  - unix
+  version: 99f16d856c9836c42d24e7ab64ea72916925fa97
+- package: gopkg.in/go-playground/validator.v8
+  version: 5f57d2222ad794d0dffb07e664ea05e2ee07d60c
+- package: gopkg.in/yaml.v2
+  version: a5b47d31c556af34a302ce5d659e6fea44d90de0
+- package: github.com/davecgh/go-spew
+  subpackages:
+  - spew
+  version: 346938d642f2ec3594ed81d874461961cd0faa76
+testImport:
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
+  version: 976c720a22c8eb4eb6a0b4348ad85ad12491a506
