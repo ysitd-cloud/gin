@@ -9,7 +9,7 @@ install:
 
 .PHONY: test
 test:
-	go test -v -covermode=count -coverprofile=coverage.out
+	go test -v ./...
 
 .PHONY: fmt
 fmt:
