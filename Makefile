@@ -4,8 +4,8 @@ GOFILES := $(shell find . -name "*.go" -type f -not -path "./vendor/*")
 
 all: build
 
-install: deps
-	govendor sync
+install:
+	glide install -v --force
 
 .PHONY: test
 test:
@@ -27,14 +27,6 @@ fmt-check:
 
 vet:
 	go vet $(PACKAGES)
-
-deps:
-	@hash govendor > /dev/null 2>&1; if [ $$? -ne 0 ]; then \
-		go get -u github.com/kardianos/govendor; \
-	fi
-	@hash embedmd > /dev/null 2>&1; if [ $$? -ne 0 ]; then \
-		go get -u github.com/campoy/embedmd; \
-	fi
 
 embedmd:
 	embedmd -d *.md

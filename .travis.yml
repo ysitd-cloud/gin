@@ -1,15 +1,17 @@
 language: go
 sudo: false
 go:
-  - 1.6.x
-  - 1.7.x
-  - 1.8.x
+  - 1.9
+  - 1.9.1
+  - 1.9.2
   - master
 
-git:
-  depth: 3
+go_import_path: github.com/ysitd-cloud/account
 
 install:
+  - go get -v github.com/Masterminds/glide
+  - cd $GOPATH/src/github.com/Masterminds/glide && git checkout v0.13.1 && go install && cd -
+  - glide install -v
   - make install
 
 script:
@@ -19,13 +21,3 @@ script:
   - make misspell-check
   - make test
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
-
-notifications:
-  webhooks:
-    urls:
-      - https://webhooks.gitter.im/e/7f95bf605c4d356372f4
-    on_success: change  # options: [always|never|change] default: always
-    on_failure: always  # options: [always|never|change] default: always
-    on_start: false     # default: false
