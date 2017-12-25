@@ -6,7 +6,7 @@ go:
   - 1.9.2
   - master
 
-go_import_path: github.com/ysitd-cloud/account
+go_import_path: github.com/gin-gonic/gin
 
 install:
   - go get -u github.com/campoy/embedmd
