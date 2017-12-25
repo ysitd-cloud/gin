@@ -9,7 +9,6 @@ go:
 go_import_path: github.com/gin-gonic/gin
 
 install:
-  - go get -u github.com/campoy/embedmd
   - go get -v github.com/Masterminds/glide
   - cd $GOPATH/src/github.com/Masterminds/glide && git checkout v0.13.1 && go install && cd -
   - glide install -v
@@ -18,7 +17,6 @@ install:
 script:
   - make vet
   - make fmt-check
-  - make embedmd
   - make misspell-check
   - make test
 
