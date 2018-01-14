@@ -13,11 +13,9 @@ import (
 	"net/http"
 	"net/http/httptest"
 	"reflect"
-	"strings"
 	"testing"
 	"time"
 
-	"github.com/gin-contrib/sse"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/net/context"
 )
