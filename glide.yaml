@@ -1,4 +1,7 @@
 package: github.com/gin-gonic/gin
+excludeDirs:
+  - ginS
+  - fixtures
 import:
 - package: github.com/dustin/go-broadcast
   version: 3bdf6d4a7164a50bc19d5f230e2981d87d2584f1
