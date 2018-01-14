@@ -729,23 +729,6 @@ func TestContextRenderNoContentData(t *testing.T) {
 	assert.Equal(t, w.HeaderMap.Get("Content-Type"), "text/csv")
 }
 
-func TestContextRenderSSE(t *testing.T) {
-	w := httptest.NewRecorder()
-	c, _ := CreateTestContext(w)
-
-	c.SSEvent("float", 1.5)
-	c.Render(-1, sse.Event{
-		Id:   "123",
-		Data: "text",
-	})
-	c.SSEvent("chat", H{
-		"foo": "bar",
-		"bar": "foo",
-	})
-
-	assert.Equal(t, strings.Replace(w.Body.String(), " ", "", -1), strings.Replace("event:float\ndata:1.5\n\nid:123\ndata:text\n\nevent:chat\ndata:{\"bar\":\"foo\",\"foo\":\"bar\"}\n\n", " ", "", -1))
-}
-
 func TestContextRenderFile(t *testing.T) {
 	w := httptest.NewRecorder()
 	c, _ := CreateTestContext(w)
