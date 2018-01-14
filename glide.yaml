@@ -2,8 +2,6 @@ package: github.com/gin-gonic/gin
 import:
 - package: github.com/dustin/go-broadcast
   version: 3bdf6d4a7164a50bc19d5f230e2981d87d2584f1
-- package: github.com/gin-contrib/sse
-  version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
 - package: github.com/gin-gonic/autotls
   version: 5b3297bdcee778ff3bbdc99ab7c41e1c2677d22d
 - package: github.com/golang/protobuf

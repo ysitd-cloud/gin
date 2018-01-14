@@ -16,7 +16,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gin-contrib/sse"
 	"github.com/gin-gonic/gin/binding"
 	"github.com/gin-gonic/gin/render"
 )
@@ -656,14 +655,6 @@ func (c *Context) Data(code int, contentType string, data []byte) {
 // File writes the specified file into the body stream in a efficient way.
 func (c *Context) File(filepath string) {
 	http.ServeFile(c.Writer, c.Request, filepath)
-}
-
-// SSEvent writes a Server-Sent Event into the body stream.
-func (c *Context) SSEvent(name string, message interface{}) {
-	c.Render(-1, sse.Event{
-		Event: name,
-		Data:  message,
-	})
 }
 
 func (c *Context) Stream(step func(w io.Writer) bool) {
