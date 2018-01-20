@@ -234,7 +234,7 @@ func TestMiddlewareWrite(t *testing.T) {
 	})
 	router.GET("/", func(c *Context) {
 		c.JSON(400, H{"foo": "bar"})
-	}, func (c *Context) {
+	}, func(c *Context) {
 		c.String(400, "testing")
 	})
 
