@@ -9,8 +9,6 @@ import:
   subpackages:
   - proto
   version: 5a0f697c9ed9d68fef0116532c6e05cfeae00e55
-- package: github.com/manucorporat/stats
-  version: 8f2d6ace262eba462e9beb552382c98be51d807b
 - package: github.com/mattn/go-isatty
   version: 57fdcb988a5c543893cc61bce354a6e24ab7002
 - package: github.com/pmezard/go-difflib

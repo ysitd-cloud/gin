@@ -1,5 +1,5 @@
-hash: d3438b14116639a46e49529416899b78b908fdd528dcf89fb56e8d2fcc8250a5
-updated: 2018-01-20T12:15:46.621803+08:00
+hash: 44c27ed34ba6a3c7dcf2149f17cf577a4a88682d57f9c39f054d3dd9adbf950c
+updated: 2018-01-20T12:18:34.862657+08:00
 imports:
 - name: github.com/davecgh/go-spew
   version: 346938d642f2ec3594ed81d874461961cd0faa76
@@ -11,8 +11,6 @@ imports:
   version: 5a0f697c9ed9d68fef0116532c6e05cfeae00e55
   subpackages:
   - proto
-- name: github.com/manucorporat/stats
-  version: 8f2d6ace262eba462e9beb552382c98be51d807b
 - name: github.com/mattn/go-isatty
   version: 57fdcb988a5c543893cc61bce354a6e24ab70022
 - name: github.com/pmezard/go-difflib
