@@ -1,10 +1,6 @@
-hash: 44c27ed34ba6a3c7dcf2149f17cf577a4a88682d57f9c39f054d3dd9adbf950c
-updated: 2018-01-20T12:18:34.862657+08:00
+hash: 9fd36b937b40e314f88b8143171cb794a217e594a9a8df2a0d7b2e1d3279fe3f
+updated: 2018-01-20T12:24:32.482954+08:00
 imports:
-- name: github.com/davecgh/go-spew
-  version: 346938d642f2ec3594ed81d874461961cd0faa76
-  subpackages:
-  - spew
 - name: github.com/gin-gonic/autotls
   version: 5b3297bdcee778ff3bbdc99ab7c41e1c2677d22d
 - name: github.com/golang/protobuf
@@ -13,10 +9,6 @@ imports:
   - proto
 - name: github.com/mattn/go-isatty
   version: 57fdcb988a5c543893cc61bce354a6e24ab70022
-- name: github.com/pmezard/go-difflib
-  version: 792786c7400a136282c1664665ae0a8db921c6c2
-  subpackages:
-  - difflib
 - name: github.com/ugorji/go
   version: c88ee250d0221a57af388746f5cf03768c21d6e2
   subpackages:
@@ -38,8 +30,14 @@ imports:
 - name: gopkg.in/yaml.v2
   version: a5b47d31c556af34a302ce5d659e6fea44d90de0
 testImports:
-- name: github.com/gin-contrib/sse
-  version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
+- name: github.com/davecgh/go-spew
+  version: 6d212800a42e8ab5c146b8ace3490ee17e5225f9
+  subpackages:
+  - spew
+- name: github.com/pmezard/go-difflib
+  version: d8ed2627bdf02c080bf22230dbb337003b7aba2d
+  subpackages:
+  - difflib
 - name: github.com/stretchr/testify
   version: 976c720a22c8eb4eb6a0b4348ad85ad12491a506
   subpackages:

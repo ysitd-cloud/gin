@@ -9,7 +9,6 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gin-contrib/sse"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -235,15 +234,12 @@ func TestMiddlewareWrite(t *testing.T) {
 	})
 	router.GET("/", func(c *Context) {
 		c.JSON(400, H{"foo": "bar"})
-	}, func(c *Context) {
-		c.Render(400, sse.Event{
-			Event: "test",
-			Data:  "message",
-		})
+	}, func (c *Context) {
+		c.String(400, "testing")
 	})
 
 	w := performRequest(router, "GET", "/")
 
 	assert.Equal(t, 400, w.Code)
-	assert.Equal(t, strings.Replace("hola\n<map><foo>bar</foo></map>{\"foo\":\"bar\"}{\"foo\":\"bar\"}event:test\ndata:message\n\n", " ", "", -1), strings.Replace(w.Body.String(), " ", "", -1))
+	assert.Equal(t, strings.Replace("hola\n<map><foo>bar</foo></map>{\"foo\":\"bar\"}{\"foo\":\"bar\"}testing", " ", "", -1), strings.Replace(w.Body.String(), " ", "", -1))
 }

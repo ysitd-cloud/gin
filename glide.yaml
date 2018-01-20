@@ -11,10 +11,6 @@ import:
   version: 5a0f697c9ed9d68fef0116532c6e05cfeae00e55
 - package: github.com/mattn/go-isatty
   version: 57fdcb988a5c543893cc61bce354a6e24ab7002
-- package: github.com/pmezard/go-difflib
-  subpackages:
-  - difflib
-  version: 792786c7400a136282c1664665ae0a8db921c6c2
 - package: github.com/ugorji/go
   subpackages:
   - codec
@@ -35,10 +31,6 @@ import:
   version: 5f57d2222ad794d0dffb07e664ea05e2ee07d60c
 - package: gopkg.in/yaml.v2
   version: a5b47d31c556af34a302ce5d659e6fea44d90de0
-- package: github.com/davecgh/go-spew
-  subpackages:
-  - spew
-  version: 346938d642f2ec3594ed81d874461961cd0faa76
 testImport:
 - package: github.com/stretchr/testify
   subpackages:
