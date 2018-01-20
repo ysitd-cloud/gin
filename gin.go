@@ -122,7 +122,7 @@ func New() *Engine {
 		UseRawPath:             false,
 		UnescapePathValues:     true,
 		trees:                  make(methodTrees, 0, 9),
-		delims:                 render.Delims{"{{", "}}"},
+		delims:                 render.Delims{Left: "{{", Right: "}}"},
 	}
 	engine.RouterGroup.engine = engine
 	engine.pool.New = func() interface{} {
@@ -143,7 +143,7 @@ func (engine *Engine) allocateContext() *Context {
 }
 
 func (engine *Engine) Delims(left, right string) *Engine {
-	engine.delims = render.Delims{left, right}
+	engine.delims = render.Delims{Left: left, Right: right}
 	return engine
 }
 
