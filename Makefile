@@ -7,7 +7,6 @@ all: build
 .PHONY: test
 test:
 	go test -v ./...
-	sh coverage.sh
 
 .PHONY: fmt
 fmt:
