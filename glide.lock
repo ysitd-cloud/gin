@@ -1,5 +1,5 @@
-hash: 9fd36b937b40e314f88b8143171cb794a217e594a9a8df2a0d7b2e1d3279fe3f
-updated: 2018-01-20T12:24:32.482954+08:00
+hash: 93ef784c21a4f1626683526b10c26f09f8fb4e826f6ded9b57736b4fb7c286b7
+updated: 2018-02-21T00:39:12.809836+08:00
 imports:
 - name: github.com/gin-gonic/autotls
   version: 5b3297bdcee778ff3bbdc99ab7c41e1c2677d22d
@@ -17,10 +17,6 @@ imports:
   version: adbae1b6b6fb4b02448a0fc0dbbc9ba2b95b294d
   subpackages:
   - acme/autocert
-- name: golang.org/x/net
-  version: 1c05540f6879653db88113bc4a2b70aec4bd491f
-  subpackages:
-  - context
 - name: golang.org/x/sys
   version: 99f16d856c9836c42d24e7ab64ea72916925fa97
   subpackages:

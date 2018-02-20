@@ -19,10 +19,6 @@ import:
   subpackages:
   - acme/autocert
   version: adbae1b6b6fb4b02448a0fc0dbbc9ba2b95b294d
-- package: golang.org/x/net
-  subpackages:
-  - context
-  version: 1c05540f6879653db88113bc4a2b70aec4bd491f
 - package: golang.org/x/sys
   subpackages:
   - unix
