@@ -32,8 +32,7 @@ const (
 )
 
 const (
-	defaultMemory      = 32 << 20 // 32 MB
-	abortIndex    int8 = math.MaxInt8 / 2
+	abortIndex int8 = math.MaxInt8 / 2
 )
 
 // Context is the most important part of gin. It allows us to pass variables between middleware,
@@ -404,7 +403,7 @@ func (c *Context) PostFormArray(key string) []string {
 func (c *Context) GetPostFormArray(key string) ([]string, bool) {
 	req := c.Request
 	req.ParseForm()
-	req.ParseMultipartForm(defaultMemory)
+	req.ParseMultipartForm(c.engine.MaxMultipartMemory)
 	if values := req.PostForm[key]; len(values) > 0 {
 		return values, true
 	}
@@ -424,7 +423,7 @@ func (c *Context) FormFile(name string) (*multipart.FileHeader, error) {
 
 // MultipartForm is the parsed multipart form, including file uploads.
 func (c *Context) MultipartForm() (*multipart.Form, error) {
-	err := c.Request.ParseMultipartForm(defaultMemory)
+	err := c.Request.ParseMultipartForm(c.engine.MaxMultipartMemory)
 	return c.Request.MultipartForm, err
 }
 
