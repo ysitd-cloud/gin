@@ -1,5 +1,5 @@
-hash: 93ef784c21a4f1626683526b10c26f09f8fb4e826f6ded9b57736b4fb7c286b7
-updated: 2018-02-21T00:39:12.809836+08:00
+hash: b67fc3999f531248cf465a066500d1eb07ebb376961f52bae8bce168676e38ea
+updated: 2018-02-21T01:33:20.545873+08:00
 imports:
 - name: github.com/gin-gonic/autotls
   version: 5b3297bdcee778ff3bbdc99ab7c41e1c2677d22d
@@ -10,7 +10,7 @@ imports:
 - name: github.com/mattn/go-isatty
   version: 57fdcb988a5c543893cc61bce354a6e24ab70022
 - name: github.com/ugorji/go
-  version: c88ee250d0221a57af388746f5cf03768c21d6e2
+  version: bdcc60b419d136a85cdf2e7cbcac34b3f1cd6e57
   subpackages:
   - codec
 - name: golang.org/x/crypto

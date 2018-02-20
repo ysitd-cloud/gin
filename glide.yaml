@@ -14,7 +14,7 @@ import:
 - package: github.com/ugorji/go
   subpackages:
   - codec
-  version: c88ee250d0221a57af388746f5cf03768c21d6e2
+  version: bdcc60b419d136a85cdf2e7cbcac34b3f1cd6e57
 - package: golang.org/x/crypto
   subpackages:
   - acme/autocert
