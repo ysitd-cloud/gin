@@ -895,34 +895,6 @@ func testFormBindingForType(t *testing.T, method, path, badPath, body, badBody s
 	}
 }
 
-func testQueryBinding(t *testing.T, method, path, badPath, body, badBody string) {
-	b := Query
-	assert.Equal(t, b.Name(), "query")
-
-	obj := FooBarStruct{}
-	req := requestWithBody(method, path, body)
-	if method == "POST" {
-		req.Header.Add("Content-Type", MIMEPOSTForm)
-	}
-	err := b.Bind(req, &obj)
-	assert.NoError(t, err)
-	assert.Equal(t, obj.Foo, "bar")
-	assert.Equal(t, obj.Bar, "foo")
-}
-
-func testQueryBindingFail(t *testing.T, method, path, badPath, body, badBody string) {
-	b := Query
-	assert.Equal(t, b.Name(), "query")
-
-	obj := FooStructForMapType{}
-	req := requestWithBody(method, path, body)
-	if method == "POST" {
-		req.Header.Add("Content-Type", MIMEPOSTForm)
-	}
-	err := b.Bind(req, &obj)
-	assert.Error(t, err)
-}
-
 func testBodyBinding(t *testing.T, b Binding, name, path, badPath, body, badBody string) {
 	assert.Equal(t, b.Name(), name)
 
