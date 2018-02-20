@@ -1,8 +1,6 @@
-hash: 7741f1bd61ed83aeeb7f0cf66f949c89cba52fe8d162527ab78a4307f24462e8
-updated: 2018-02-21T01:37:50.011576+08:00
+hash: 73f99f5ee697ded04bfb43f4747c7365f789d0709413ef436b197e24d80a8785
+updated: 2018-02-21T03:52:21.393842+08:00
 imports:
-- name: github.com/gin-gonic/autotls
-  version: 5b3297bdcee778ff3bbdc99ab7c41e1c2677d22d
 - name: github.com/golang/protobuf
   version: 5a0f697c9ed9d68fef0116532c6e05cfeae00e55
   subpackages:

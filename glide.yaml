@@ -3,8 +3,6 @@ excludeDirs:
   - ginS
   - fixtures
 import:
-- package: github.com/gin-gonic/autotls
-  version: 5b3297bdcee778ff3bbdc99ab7c41e1c2677d22d
 - package: github.com/golang/protobuf
   subpackages:
   - proto
