@@ -1,6 +1,6 @@
 # Gin Web Framework
 
-<img align="right" src="https://raw.githubusercontent.com/gin-gonic/gin/master/logo.jpg">
+<img align="right" width="159px" src="https://raw.githubusercontent.com/gin-gonic/gin/master/logo.png">
 
 [![Build Status](https://travis-ci.org/ysitd-cloud/gin.svg?branch=master)](https://travis-ci.org/ysitd-cloud/gin)
  [![GoDoc](https://godoc.org/github.com/gin-gonic/gin?status.svg)](https://godoc.org/github.com/gin-gonic/gin)
