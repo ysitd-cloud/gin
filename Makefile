@@ -4,9 +4,6 @@ GOFILES := $(shell find . -name "*.go" -type f -not -path "./vendor/*")
 
 all: build
 
-install:
-	glide install -v --force
-
 .PHONY: test
 test:
 	go test -v ./...
