@@ -363,30 +363,6 @@ func TestBindingFormForType(t *testing.T) {
 		"", "", "Float64")
 }
 
-func TestBindingQuery(t *testing.T) {
-	testQueryBinding(t, "POST",
-		"/?foo=bar&bar=foo", "/",
-		"foo=unused", "bar2=foo")
-}
-
-func TestBindingQuery2(t *testing.T) {
-	testQueryBinding(t, "GET",
-		"/?foo=bar&bar=foo", "/?bar2=foo",
-		"foo=unused", "")
-}
-
-func TestBindingQueryFail(t *testing.T) {
-	testQueryBindingFail(t, "POST",
-		"/?map_foo=", "/",
-		"map_foo=unused", "bar2=foo")
-}
-
-func TestBindingQueryFail2(t *testing.T) {
-	testQueryBindingFail(t, "GET",
-		"/?map_foo=", "/?bar2=foo",
-		"map_foo=unused", "")
-}
-
 func TestBindingXML(t *testing.T) {
 	testBodyBinding(t,
 		XML, "xml",
