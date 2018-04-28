@@ -8,14 +8,16 @@
   version = "v1.1.0"
 
 [[projects]]
+  branch = "master"
   name = "github.com/golang/protobuf"
   packages = ["proto"]
-  revision = "5a0f697c9ed9d68fef0116532c6e05cfeae00e55"
+  revision = "e09c5db296004fbe3f74490e84dcd62c3c5ddb1b"
 
 [[projects]]
+  branch = "master"
   name = "github.com/mattn/go-isatty"
   packages = ["."]
-  revision = "57fdcb988a5c543893cc61bce354a6e24ab7002"
+  revision = "6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c"
 
 [[projects]]
   name = "github.com/pmezard/go-difflib"
@@ -32,17 +34,14 @@
 [[projects]]
   name = "github.com/ugorji/go"
   packages = ["codec"]
-  revision = "c88ee250d0221a57af388746f5cf03768c21d6e2"
+  revision = "b4c50a2b199d93b13dc15e78929cfb23bfdf21ab"
+  version = "v1.1.1"
 
 [[projects]]
-  name = "golang.org/x/net"
-  packages = ["context"]
-  revision = "1c05540f6879653db88113bc4a2b70aec4bd491f"
-
-[[projects]]
+  branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "99f16d856c9836c42d24e7ab64ea72916925fa97"
+  revision = "cbbc999da32df943dac6cd71eb3ee39e1d7838b9"
 
 [[projects]]
   name = "gopkg.in/go-playground/validator.v8"
@@ -53,11 +52,12 @@
 [[projects]]
   name = "gopkg.in/yaml.v2"
   packages = ["."]
-  revision = "a5b47d31c556af34a302ce5d659e6fea44d90de0"
+  revision = "5420a8b6744d3b0345ab293f6fcba19c978f1183"
+  version = "v2.2.1"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "2556d7dc3793ef40c44f45b5802a1fb375f21533e56a386692eb6a6cdde2c09d"
+  inputs-digest = "3ebfe0b448497f3cd12452b7d12002d6f6dc9539a37b73ff2cce2d8f07746de4"
   solver-name = "gps-cdcl"
   solver-version = 1

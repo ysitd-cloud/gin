@@ -26,36 +26,32 @@
 
 ignored = [
   "github.com/gin-gonic/gin/fixtures",
-  "github.com/gin-gonic/gin/ginS"
+  "github.com/gin-gonic/gin/example"
 ]
 
 [[constraint]]
+  branch = "master"
   name = "github.com/golang/protobuf"
-  revision = "5a0f697c9ed9d68fef0116532c6e05cfeae00e55"
 
 [[constraint]]
   name = "gopkg.in/go-playground/validator.v8"
   version = "8.18.1"
 
 [[constraint]]
+  branch = "master"
   name = "github.com/mattn/go-isatty"
-  revision = "57fdcb988a5c543893cc61bce354a6e24ab7002"
 
 [[constraint]]
   name = "github.com/ugorji/go"
-  revision = "c88ee250d0221a57af388746f5cf03768c21d6e2"
-
-[[constraint]]
-  name = "golang.org/x/net"
-  revision = "1c05540f6879653db88113bc4a2b70aec4bd491f"
+  version = "1.1.1"
 
 [[override]]
+  branch = "master"
   name = "golang.org/x/sys"
-  revision = "99f16d856c9836c42d24e7ab64ea72916925fa97"
 
 [[constraint]]
   name = "gopkg.in/yaml.v2"
-  revision = "a5b47d31c556af34a302ce5d659e6fea44d90de0"
+  version = "2.2.1"
 
 [prune]
   go-tests = true
