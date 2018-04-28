@@ -2,8 +2,6 @@ GOFMT ?= gofmt "-s"
 PACKAGES ?= $(shell go list ./... | grep -v /vendor/)
 GOFILES := $(shell find . -name "*.go" -type f -not -path "./vendor/*")
 
-all: build
-
 .PHONY: test
 test:
 	go test -v ./...
@@ -23,7 +21,7 @@ fmt-check:
 	fi;
 
 vet:
-	go vet $(PACKAGES)
+	go vet ./...
 
 embedmd:
 	embedmd -d *.md
@@ -41,10 +39,3 @@ misspell-check:
 		go get -u github.com/client9/misspell/cmd/misspell; \
 	fi
 	misspell -error $(GOFILES)
-
-.PHONY: misspell
-misspell:
-	@hash misspell > /dev/null 2>&1; if [ $$? -ne 0 ]; then \
-		go get -u github.com/client9/misspell/cmd/misspell; \
-	fi
-	misspell -w $(GOFILES)
