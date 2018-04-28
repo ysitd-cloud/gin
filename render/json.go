@@ -6,8 +6,8 @@ package render
 
 import (
 	"bytes"
-	"html/template"
 	"encoding/json"
+	"html/template"
 	"net/http"
 )
 
